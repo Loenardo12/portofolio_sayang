@@ -1,0 +1,926 @@
+<!doctype html>
+
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              outline: "#70787c",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1c1c19",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#114d5d",
+              "on-surface-variant": "#40484b",
+              "surface-dim": "#dcdad5",
+              "tertiary-fixed": "#d9e5e7",
+              "secondary-fixed-dim": "#ffb693",
+              "on-secondary-fixed": "#351000",
+              surface: "#e3fafd",
+              "on-secondary-container": "#5e2300",
+              "on-tertiary-container": "#aab6b8",
+              tertiary: "#263133",
+              "on-secondary-fixed-variant": "#7a3000",
+              "on-primary-fixed": "#001f28",
+              "surface-bright": "#e3fafd",
+              secondary: "#0076b3",
+              "on-tertiary-fixed": "#121d1f",
+              "primary-container": "#0076b3",
+              error: "#ba1a1a",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#9acee1",
+              "on-tertiary-fixed-variant": "#3d494b",
+              "on-primary-container": "#87bbce",
+              "inverse-primary": "#9acee1",
+              "surface-container": "#f0ede9",
+              "primary-fixed": "#b6ebfe",
+              "on-background": "#1c1c19",
+              "secondary-fixed": "#ffdbcc",
+              "tertiary-fixed-dim": "#bdc9cb",
+              "surface-tint": "#306576",
+              "secondary-container": "#2d68e8",
+              "surface-container-high": "#ebe8e3",
+              background: "#e3fafd",
+              primary: "#003441",
+              "outline-variant": "#c0c8cb",
+              "error-container": "#ffdad6",
+              "surface-container-low": "#f6f3ee",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f3f0eb",
+              "tertiary-container": "#3d484a",
+              "surface-variant": "#e5e2dd",
+              "on-secondary": "#ffffff",
+              "inverse-surface": "#31302d",
+              "surface-container-highest": "#e5e2dd",
+              "on-primary": "#ffffff",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "space-sm": "0.5rem",
+              "space-xs": "0.25rem",
+              gutter: "1.5rem",
+              "space-lg": "1.5rem",
+              margin: "2rem",
+              "margin-mobile": "1.25rem",
+              "gutter-mobile": "1rem",
+              "space-md": "1rem",
+              "space-xl": "2rem",
+            },
+            fontFamily: {
+              "body-md": ["Inter"],
+              "body-lg": ["Inter"],
+              "headline-lg": ["Outfit"],
+              "body-sm": ["Inter"],
+              "headline-sm": ["Outfit"],
+              "label-sm": ["Inter"],
+              "label-md": ["Inter"],
+              "display-mobile": ["Outfit"],
+              "headline-lg-mobile": ["Outfit"],
+              eyebrow: ["Inter"],
+              "headline-md": ["Outfit"],
+              "headline-md-mobile": ["Outfit"],
+              display: ["Outfit"],
+            },
+            fontSize: {
+              "body-md": [
+                "16px",
+                {
+                  lineHeight: "27.2px",
+                  letterSpacing: "0em",
+                  fontWeight: "400",
+                },
+              ],
+              "body-lg": [
+                "18px",
+                {
+                  lineHeight: "30.6px",
+                  letterSpacing: "-0.005em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-lg": [
+                "36px",
+                {
+                  lineHeight: "46px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-sm": [
+                "14px",
+                { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "headline-sm": [
+                "18px",
+                { lineHeight: "26px", letterSpacing: "0em", fontWeight: "600" },
+              ],
+              "label-sm": [
+                "13px",
+                {
+                  lineHeight: "18px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "display-mobile": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg-mobile": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              eyebrow: [
+                "13px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.08em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-md": [
+                "22px",
+                {
+                  lineHeight: "30px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-md-mobile": [
+                "20px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              display: [
+                "56px",
+                {
+                  lineHeight: "68px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-surface font-body-md text-on-surface antialiased">
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)]"
+    >
+      <div
+        class="h-20 max-w-[1200px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between"
+      >
+        <a
+          class="flex items-center text-on-surface hover:opacity-90 transition-opacity"
+          data-path="beranda"
+          href="#"
+          ><span
+            class="font-headline-md text-headline-md tracking-tight font-semibold"
+            >Nadya Intan R<span class="text-secondary-container">.</span></span
+          ></a
+        >
+        <nav
+          class="hidden lg:flex items-center gap-space-xl"
+          data-active-classes="text-primary font-semibold relative after:content-[''] after:absolute after:bottom-[-6px] after:left-0 after:right-0 after:h-[2px] after:bg-secondary-container after:rounded-full"
+        >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="beranda"
+            href="index.html"
+            >Beranda</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="tentang"
+            href="tentang.html"
+            >Tentang</a
+          ><a
+            aria-current="page"
+            class="transition-colors text-primary font-semibold relative after:content-[''] after:absolute after:bottom-[-6px] after:left-0 after:right-0 after:h-[2px] after:bg-secondary-container after:rounded-full"
+            data-path="proyek"
+            href="proyek.html"
+            >Proyek</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="keahlian"
+            href="keahlian.html"
+            >Keahlian & Pengalaman</a
+          >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="kontak"
+            href="kontak.html"
+            >Kontak</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-md">
+          <a
+            class="inline-flex items-center justify-center h-12 px-space-lg rounded-xl bg-secondary-container text-on-primary font-label-md text-label-md hover:bg-secondary transition-all shadow-[0_4px_14px_rgba(227,100,20,0.35)] hover:shadow-none hover:-translate-y-0.5"
+            href="assets/file/CV.pdf"
+            >Unduh CV</a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+      <div class="flex flex-col w-full">
+        <div
+          class="w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin py-12 flex flex-col"
+        >
+          <!-- 1. PAGE HEADER -->
+          <header class="flex flex-col items-start gap-space-xs mb-10">
+            <div class="flex items-center gap-space-sm">
+              <span
+                class="font-eyebrow text-eyebrow text-secondary-container tracking-wider uppercase font-semibold"
+                >PORTOFOLIO</span
+              >
+              <div
+                class="w-9 h-[3px] bg-secondary-container rounded-full"
+              ></div>
+            </div>
+            <h1
+              class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight mt-1"
+            >
+              Proyek &amp; Karya
+            </h1>
+            <p
+              class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-1"
+            >
+              Beberapa karya yang menunjukkan cara saya menyelesaikan masalah
+              dengan data dan sistem.
+            </p>
+          </header>
+          <!-- 2. FILTER BAR -->
+          <nav
+            aria-label="Filter Kategori Proyek"
+            class="flex flex-wrap items-center gap-space-sm mb-10"
+          >
+            <button
+              class="filter-btn px-5 py-2.5 rounded-full font-label-md text-label-md font-medium bg-primary-container text-on-primary shadow-sm hover:opacity-95 transition-all"
+              data-filter="all"
+              type="button"
+            >
+              Semua
+            </button>
+            <button
+              class="filter-btn px-5 py-2.5 rounded-full font-label-md text-label-md font-medium bg-surface-container-lowest text-on-surface-variant shadow-sm hover:text-primary transition-all"
+              data-filter="si"
+              type="button"
+            >
+              Sistem Informasi
+            </button>
+            <button
+              class="filter-btn px-5 py-2.5 rounded-full font-label-md text-label-md font-medium bg-surface-container-lowest text-on-surface-variant shadow-sm hover:text-primary transition-all"
+              data-filter="uiux"
+              type="button"
+            >
+              UI/UX Design
+            </button>
+            <button
+              class="filter-btn px-5 py-2.5 rounded-full font-label-md text-label-md font-medium bg-surface-container-lowest text-on-surface-variant shadow-sm hover:text-primary transition-all"
+              data-filter="data"
+              type="button"
+            >
+              Data &amp; Analisis
+            </button>
+          </nav>
+          <!-- 3. FEATURED PROJECT (Large horizontal bento card) -->
+          <article
+            class="w-full bg-surface-container-lowest rounded-2xl p-6 sm:p-8 md:p-10 shadow-sm hover:shadow-md transition-all duration-300 mb-12 flex flex-col"
+          >
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch"
+            >
+              <!-- Left Column: UI Mockup Showcase -->
+              <div
+                class="lg:col-span-6 flex flex-col justify-between rounded-xl bg-surface-container-low p-4 sm:p-5 relative overflow-hidden shadow-inner"
+              >
+                <!-- Browser Frame Top Bar -->
+                <div
+                  class="flex items-center justify-between pb-3 mb-3 border-b border-surface-container-high/60"
+                >
+                  <div class="flex items-center gap-1.5">
+                    <span
+                      class="w-3 h-3 rounded-full bg-error/70 inline-block"
+                    ></span>
+                    <span
+                      class="w-3 h-3 rounded-full bg-secondary-container/70 inline-block"
+                    ></span>
+                    <span
+                      class="w-3 h-3 rounded-full bg-primary-container/40 inline-block"
+                    ></span>
+                  </div>
+                  <div
+                    class="px-3 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-[11px] truncate max-w-[200px]"
+                  >
+                    topsis-spk.sman1pronojiwo.sch.id
+                  </div>
+                  <span
+                    class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-primary-fixed-variant font-label-sm text-[11px] font-semibold"
+                  >
+                    <span class="material-symbols-outlined text-[13px]"
+                      >verified</span
+                    >
+                    Sinta 4
+                  </span>
+                </div>
+                <!-- Application Dashboard Content Simulation -->
+                <div
+                  class="flex flex-col gap-3.5 bg-surface-container-lowest rounded-lg p-4 shadow-sm"
+                >
+                  <!-- Simulated Metric Highlights -->
+                  <div class="grid grid-cols-3 gap-2">
+                    <div
+                      class="p-2.5 rounded bg-surface-container-low flex flex-col"
+                    >
+                      <span
+                        class="font-label-sm text-[11px] text-on-surface-variant"
+                        >Siswa Dinilai</span
+                      >
+                      <span
+                        class="font-headline-sm text-headline-sm text-primary font-bold"
+                        >128</span
+                      >
+                    </div>
+                    <div
+                      class="p-2.5 rounded bg-surface-container-low flex flex-col"
+                    >
+                      <span
+                        class="font-label-sm text-[11px] text-on-surface-variant"
+                        >Kriteria Matriks</span
+                      >
+                      <span
+                        class="font-headline-sm text-headline-sm text-primary font-bold"
+                        >4 Pilar</span
+                      >
+                    </div>
+                    <div
+                      class="p-2.5 rounded bg-surface-container-low flex flex-col"
+                    >
+                      <span
+                        class="font-label-sm text-[11px] text-on-surface-variant"
+                        >Presisi TOPSIS</span
+                      >
+                      <span
+                        class="font-headline-sm text-headline-sm text-secondary-container font-bold"
+                        >99.2%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Vector Analytical Sparkline / SVG Visualization -->
+                  <div
+                    class="rounded-lg bg-surface-container-lowest p-3 flex flex-col gap-2"
+                  >
+                    <div
+                      class="flex items-center justify-between text-on-surface-variant font-label-sm text-[12px]"
+                    >
+                      <span class="font-medium text-on-surface"
+                        >Distribusi Nilai Preferensi (Vᵢ)</span
+                      >
+                      <span class="text-primary font-semibold"
+                        >TOPSIS Solusi Ideal</span
+                      >
+                    </div>
+                    <div class="w-full h-24 flex items-end">
+                      <svg
+                        class="w-full h-full text-primary-container"
+                        preserveaspectratio="none"
+                        viewbox="0 0 340 70"
+                      >
+                        <defs>
+                          <lineargradient
+                            id="topsisGradient"
+                            x1="0"
+                            x2="0"
+                            y1="0"
+                            y2="1"
+                          >
+                            <stop
+                              offset="0%"
+                              stop-color="#0076b3"
+                              stop-opacity="0.35"
+                            ></stop>
+                            <stop
+                              offset="100%"
+                              stop-color="#0076b3"
+                              stop-opacity="0.0"
+                            ></stop>
+                          </lineargradient>
+                        </defs>
+                        <!-- Shaded area -->
+                        <path
+                          d="M 0 65 Q 40 50, 70 42 T 140 38 T 210 20 T 280 12 T 340 6 L 340 70 L 0 70 Z"
+                          fill="url(#topsisGradient)"
+                        ></path>
+                        <!-- Trend curve -->
+                        <path
+                          d="M 0 65 Q 40 50, 70 42 T 140 38 T 210 20 T 280 12 T 340 6"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                        ></path>
+                        <!-- Peak marker -->
+                        <circle
+                          class="fill-secondary-container"
+                          cx="340"
+                          cy="6"
+                          r="3.5"
+                        ></circle>
+                        <circle
+                          class="fill-primary"
+                          cx="280"
+                          cy="12"
+                          r="2.5"
+                        ></circle>
+                        <circle
+                          class="fill-primary"
+                          cx="210"
+                          cy="20"
+                          r="2.5"
+                        ></circle>
+                      </svg>
+                    </div>
+                  </div>
+                  <!-- Simulated Ranking Rows -->
+                  <div class="flex flex-col gap-1.5 pt-1">
+                    <div
+                      class="flex items-center justify-between px-2.5 py-1.5 rounded bg-tertiary-fixed/40 text-on-surface font-label-sm text-[12px]"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span
+                          class="w-5 h-5 rounded-full bg-secondary-container text-on-primary flex items-center justify-center font-bold text-[10px]"
+                          >1</span
+                        >
+                        <span class="font-medium"
+                          >Aditya Pratama (XII IPA 1)</span
+                        >
+                      </div>
+                      <span class="font-bold text-primary">V = 0.8924</span>
+                    </div>
+                    <div
+                      class="flex items-center justify-between px-2.5 py-1.5 rounded bg-surface-container-low text-on-surface font-label-sm text-[12px]"
+                    >
+                      <div class="flex items-center gap-2">
+                        <span
+                          class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-semibold text-[10px]"
+                          >2</span
+                        >
+                        <span class="font-medium"
+                          >Siti Rahmawati (XII IPS 2)</span
+                        >
+                      </div>
+                      <span class="font-medium text-on-surface-variant"
+                        >V = 0.8410</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Right Column: Project Dossier & Narrative -->
+              <div class="lg:col-span-6 flex flex-col justify-between">
+                <div class="flex flex-col items-start">
+                  <!-- Meta Pill Chip -->
+                  <div
+                    class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-tertiary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold mb-3"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >menu_book</span
+                    >
+                    Dipublikasikan di Jurnal Sinta 4 (2026)
+                  </div>
+                  <h2
+                    class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight leading-snug mt-1 mb-4"
+                  >
+                    Sistem Pendukung Keputusan Prestasi Siswa SMA Negeri 1
+                    Pronojiwo Menggunakan Metode TOPSIS
+                  </h2>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed"
+                  >
+                    Sistem web untuk menilai siswa berprestasi secara objektif
+                    berdasarkan nilai akademik, kehadiran, kedisiplinan, dan
+                    prestasi non-akademik. Perangkingan dihitung otomatis,
+                    akurat, dan konsisten dengan validasi manual.
+                  </p>
+                  <!-- Tags Row -->
+                  <div class="flex flex-wrap gap-2 mb-8">
+                    <span
+                      class="px-3 py-1 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold"
+                      >Web</span
+                    >
+                    <span
+                      class="px-3 py-1 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold"
+                      >TOPSIS</span
+                    >
+                    <span
+                      class="px-3 py-1 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold"
+                      >MySQL</span
+                    >
+                    <span
+                      class="px-3 py-1 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold"
+                      >Black Box Testing</span
+                    >
+                  </div>
+                </div>
+                <!-- Action Buttons Row -->
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                  <a
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary-container text-on-primary font-label-md text-label-md font-medium hover:bg-secondary transition-all shadow-[0_4px_14px_rgba(253,119,41,0.25)] hover:-translate-y-0.5"
+                    href="project.html"
+                  >
+                    <span>Lihat Studi Kasus</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                  <a
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md font-medium hover:bg-tertiary-fixed transition-all"
+                    href="https://www.j-ilkominfo.org/index.php/ejournalaikom/article/view/415/131"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >open_in_new</span
+                    >
+                    <span>Baca Jurnal</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- 4. PROJECT GRID (2-column layout) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <!-- Card 1: UI/UX Redesign -->
+            <article
+              class="flex flex-col bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 group"
+            >
+              <!-- Image Preview / Mockup Frame -->
+              <div
+                class="w-full h-56 rounded-xl overflow-hidden relative mb-6 bg-surface-container-low shadow-inner"
+              >
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="High fidelity modern UI UX design mockup of an academic campus student portal showing structured clean schedule tables, navigation bar, profile analytics, and student administrative forms designed in Figma using clean teal and coral accents."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCagkM0FVkUrdBsho4DcAp48iDzOlaV_QwkSkhbyuuNZKlBMv_AvjkgojhzACcR_5xiK8vfyGLUh8B-leEo_F-U9B5foLuqRAq2uYxF7U_F779NeVJ4z6YyRPnC_0HGCbRp-IL6bh11hJn82tzSQleaOsiev4IqtO6_aOaWwAjbAo2p0pZSC9LHvnlZVec3CUvzrqkY731cy5_sd2kz11fEbc7z7vi56e9A1bWWaGA"
+                />
+                <div
+                  class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md bg-on-surface/85 backdrop-blur-sm text-on-primary font-label-sm text-[11px] font-medium flex items-center gap-1.5"
+                >
+                  <span class="material-symbols-outlined text-[14px]"
+                    >devices</span
+                  >
+                  Interactive Prototype
+                </div>
+              </div>
+              <div class="flex flex-col flex-1 justify-between">
+                <div>
+                  <div
+                    class="font-eyebrow text-eyebrow text-secondary-container uppercase tracking-wider font-bold mb-2"
+                  >
+                    UI/UX Design • 2024
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight mb-3"
+                  >
+                    Redesain Antarmuka Portal Akademik Kampus
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-6"
+                  >
+                    Eksplorasi antarmuka portal layanan akademik dan tata kelola
+                    arsip dengan pendekatan user-centered design, sistem desain
+                    terstruktur, dan purwarupa interaktif.
+                  </p>
+                </div>
+                <div>
+                  <div class="flex flex-wrap gap-2 mb-6">
+                    <span
+                      class="px-3 py-1 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold"
+                      >Figma</span
+                    >
+                    <span
+                      class="px-3 py-1 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold"
+                      >UI/UX</span
+                    >
+                    <span
+                      class="px-3 py-1 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold"
+                      >Prototype</span
+                    >
+                    <span
+                      class="px-3 py-1 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold"
+                      >Usability Testing</span
+                    >
+                  </div>
+                  
+                </div>
+              </div>
+            </article>
+            <!-- Card 2: Laboratory Inventory System -->
+            <article
+              class="flex flex-col bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 group"
+            >
+              <!-- Image Preview / Mockup Frame -->
+              <div
+                class="w-full h-56 rounded-xl overflow-hidden relative mb-6 bg-surface-container-low shadow-inner"
+              >
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Modern web-based laboratory hardware inventory management software screen displaying tabular equipment tracking, loan status badges, filterable archive entries, and operational dashboard analytics in deep oceanic teal styling."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZkbQGpnyQKns5A4SQjzc_x7THzFiQrf0wtFJ_6o0ObXZR0dajYpmUKJsB2IrVG-vxknAsFktBQhb4KXJB6ybzr1Z9K8q7-0O4zu8FS69gBmlWtspDbWJAZdeZBO5syEM98eO4v-DA9Ptn2W01j24KNRWwFU7kwgp-JdRTeEkPWjNe9rBi2Dduz6jzI47rL6Q_4SiUlAoUtfa1uzBr8snTqC0BNfB4NEO4UWHs-U8"
+                />
+                <div
+                  class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md bg-on-surface/85 backdrop-blur-sm text-on-primary font-label-sm text-[11px] font-medium flex items-center gap-1.5"
+                >
+                  <span class="material-symbols-outlined text-[14px]"
+                    >inventory_2</span
+                  >
+                  Database Active
+                </div>
+              </div>
+              <div class="flex flex-col flex-1 justify-between">
+                <div>
+                  <div
+                    class="font-eyebrow text-eyebrow text-primary-container uppercase tracking-wider font-bold mb-2"
+                  >
+                    Sistem Informasi • 2023
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight mb-3"
+                  >
+                    Sistem Inventaris &amp; Pengarsipan Aset Laboratorium
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mb-6"
+                  >
+                    Pengembangan sistem manajemen inventaris dan administrasi
+                    data operasional berbasis web untuk memantau sirkulasi
+                    peminjaman perangkat laboratorium secara real-time.
+                  </p>
+                </div>
+                <div>
+                  <div class="flex flex-wrap gap-2 mb-6">
+                    <span
+                      class="px-3 py-1 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold"
+                      >MySQL</span
+                    >
+                    <span
+                      class="px-3 py-1 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold"
+                      >PHP</span
+                    >
+                    <span
+                      class="px-3 py-1 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold"
+                      >Web</span
+                    >
+                    <span
+                      class="px-3 py-1 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold"
+                      >Administrasi</span
+                    >
+                  </div>
+                  
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- Dashed-border Placeholder Card -->
+          <section
+            class="w-full rounded-2xl p-8 md:p-12 bg-surface-container-lowest/60 shadow-sm flex flex-col items-center justify-center text-center mb-16"
+          >
+            <div
+              class="w-14 h-14 rounded-full bg-tertiary-fixed flex items-center justify-center text-primary mb-4 shadow-sm"
+            >
+              <span class="material-symbols-outlined text-[28px]"
+                >auto_awesome</span
+              >
+            </div>
+            <h3
+              class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2"
+            >
+              Proyek lain segera hadir
+            </h3>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant max-w-lg"
+            >
+              Saat ini sedang merapikan dokumentasi proyek data analytics dan
+              otomatisasi dokumen operasional lainnya.
+            </p>
+          </section>
+          <!-- 5. CTA STRIP -->
+          <section
+            class="w-full rounded-2xl bg-gradient-to-r from-primary to-primary-container text-on-primary p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-md relative overflow-hidden"
+          >
+            <!-- Background subtle atmospheric decorative circle -->
+            <div
+              class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-secondary-container/10 pointer-events-none blur-2xl"
+            ></div>
+            <div class="flex flex-col items-start max-w-xl z-10">
+              <h2
+                class="font-headline-md text-headline-md font-semibold text-on-primary tracking-tight"
+              >
+                Punya proyek atau peluang untuk didiskusikan?
+              </h2>
+              <p class="font-body-sm text-body-sm text-primary-fixed mt-1.5">
+                Saya siap membantu kebutuhan administrasi, tata kelola data,
+                maupun desain antarmuka sistem Anda.
+              </p>
+            </div>
+            <div class="flex-shrink-0 z-10 w-full md:w-auto">
+              <a
+                class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-secondary-container text-on-primary font-label-md text-label-md font-medium hover:bg-secondary transition-all shadow-[0_4px_14px_rgba(253,119,41,0.35)] hover:-translate-y-0.5"
+                href="#kontak"
+              >
+                <span class="material-symbols-outlined text-[20px]">mail</span>
+                <span>Hubungi Saya</span>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <script>
+        (function () {
+          const filterButtons = document.querySelectorAll(".filter-btn");
+          filterButtons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+              filterButtons.forEach((b) => {
+                b.classList.remove("bg-primary-container", "text-on-primary");
+                b.classList.add(
+                  "bg-surface-container-lowest",
+                  "text-on-surface-variant",
+                );
+              });
+              btn.classList.remove(
+                "bg-surface-container-lowest",
+                "text-on-surface-variant",
+              );
+              btn.classList.add("bg-primary-container", "text-on-primary");
+            });
+          });
+        })();
+      </script>
+    </main>
+    <footer
+      class="w-full bg-primary-container text-surface py-space-xl shadow-[0_-4px_24px_rgba(15,76,92,0.12)]"
+    >
+      <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter py-space-lg">
+          <div class="md:col-span-5 flex flex-col gap-space-sm">
+            <span
+              class="font-headline-md text-headline-md text-surface font-semibold tracking-tight"
+              >Nadya Intan Rayyano</span
+            >
+            <p
+              class="font-body-md text-body-md text-surface-container-high max-w-sm"
+            >
+              Teliti, rapi, dan siap berkontribusi dalam rekayasa sistem,
+              manajemen data terpadu, dan desain interaksi digital.
+            </p>
+          </div>
+          <div class="md:col-span-3 flex flex-col gap-space-sm">
+            <span
+              class="font-label-md text-label-md font-semibold text-secondary-fixed uppercase tracking-wider"
+              >Navigasi Cepat</span
+            >
+            <div class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+              <a
+                class="text-surface-container-high hover:text-secondary-fixed transition-colors"
+                data-path="beranda"
+                href="index.html"
+                >Beranda</a
+              ><a
+                class="text-surface-container-high hover:text-secondary-fixed transition-colors"
+                data-path="tentang"
+                href="tentang.html"
+                >Tentang</a
+              ><a
+                class="text-surface-container-high hover:text-secondary-fixed transition-colors"
+                data-path="proyek"
+                href="proyek.html"
+                >Proyek</a
+              ><a
+                class="text-surface-container-high hover:text-secondary-fixed transition-colors"
+                data-path="keahlian"
+                href="keahlian.html"
+                >Keahlian & Pengalaman</a
+              >
+              ><a
+                class="text-surface-container-high hover:text-secondary-fixed transition-colors"
+                data-path="kontak"
+                href="kontak.html"
+                >Kontak</a
+              >
+            </div>
+          </div>
+          <div class="md:col-span-4 flex flex-col gap-space-sm">
+            <span
+              class="font-label-md text-label-md font-semibold text-secondary-fixed uppercase tracking-wider"
+              >Kontak &amp; Jejaring</span
+            >
+            <div
+              class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-container-high"
+            >
+              <a
+                class="flex items-center gap-space-xs hover:text-secondary-fixed transition-colors"
+                href="mailto:rayyanointan10@gmail.com"
+                ><span class="material-symbols-outlined text-[18px]">mail</span
+                >rayyanointan10@gmail.com</a
+              ><a
+                class="flex items-center gap-space-xs hover:text-secondary-fixed transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined text-[18px]">link</span
+                >LinkedIn Profile</a
+              ><a
+                class="flex items-center gap-space-xs hover:text-secondary-fixed transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined text-[18px]"
+                  >description</span
+                >Unduh Berkas CV</a
+              >
+              <div
+                class="flex items-center gap-space-xs pt-space-xs text-tertiary-fixed-dim"
+              >
+                <span class="material-symbols-outlined text-[18px]"
+                  >location_on</span
+                >Indonesia
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-space-lg pt-space-md border-t border-tertiary-container flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-surface-container-high"
+        >
+          <p>© 2026 Nadya Intan Rayyano. All rights reserved.</p>
+          <p class="text-tertiary-fixed-dim">
+            Informatics Engineering Portfolio
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

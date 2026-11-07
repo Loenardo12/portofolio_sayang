@@ -1,0 +1,1460 @@
+<!doctype html>
+
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              outline: "#70787c",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#1c1c19",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#114d5d",
+              "on-surface-variant": "#40484b",
+              "surface-dim": "#dcdad5",
+              "tertiary-fixed": "#d9e5e7",
+              "secondary-fixed-dim": "#ffb693",
+              "on-secondary-fixed": "#351000",
+              surface: "#e3fafd",
+              "on-secondary-container": "#5e2300",
+              "on-tertiary-container": "#aab6b8",
+              tertiary: "#263133",
+              "on-secondary-fixed-variant": "#7a3000",
+              "on-primary-fixed": "#001f28",
+              "surface-bright": "#e3fafd",
+              secondary: "#0076b3",
+              "on-tertiary-fixed": "#121d1f",
+              "primary-container": "#0076b3",
+              error: "#ba1a1a",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#9acee1",
+              "on-tertiary-fixed-variant": "#3d494b",
+              "on-primary-container": "#87bbce",
+              "inverse-primary": "#9acee1",
+              "surface-container": "#f0ede9",
+              "primary-fixed": "#b6ebfe",
+              "on-background": "#1c1c19",
+              "secondary-fixed": "#ffdbcc",
+              "tertiary-fixed-dim": "#bdc9cb",
+              "surface-tint": "#306576",
+              "secondary-container": "#2d68e8",
+              "surface-container-high": "#ebe8e3",
+              background: "#e3fafd",
+              primary: "#003441",
+              "outline-variant": "#c0c8cb",
+              "error-container": "#ffdad6",
+              "surface-container-low": "#f6f3ee",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f3f0eb",
+              "tertiary-container": "#3d484a",
+              "surface-variant": "#e5e2dd",
+              "on-secondary": "#ffffff",
+              "inverse-surface": "#31302d",
+              "surface-container-highest": "#e5e2dd",
+              "on-primary": "#ffffff",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "space-sm": "0.5rem",
+              "space-xs": "0.25rem",
+              gutter: "1.5rem",
+              "space-lg": "1.5rem",
+              margin: "2rem",
+              "margin-mobile": "1.25rem",
+              "gutter-mobile": "1rem",
+              "space-md": "1rem",
+              "space-xl": "2rem",
+            },
+            fontFamily: {
+              "body-md": ["Inter"],
+              "body-lg": ["Inter"],
+              "headline-lg": ["Outfit"],
+              "body-sm": ["Inter"],
+              "headline-sm": ["Outfit"],
+              "label-sm": ["Inter"],
+              "label-md": ["Inter"],
+              "display-mobile": ["Outfit"],
+              "headline-lg-mobile": ["Outfit"],
+              eyebrow: ["Inter"],
+              "headline-md": ["Outfit"],
+              "headline-md-mobile": ["Outfit"],
+              display: ["Outfit"],
+            },
+            fontSize: {
+              "body-md": [
+                "16px",
+                {
+                  lineHeight: "27.2px",
+                  letterSpacing: "0em",
+                  fontWeight: "400",
+                },
+              ],
+              "body-lg": [
+                "18px",
+                {
+                  lineHeight: "30.6px",
+                  letterSpacing: "-0.005em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-lg": [
+                "36px",
+                {
+                  lineHeight: "46px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-sm": [
+                "14px",
+                { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "headline-sm": [
+                "18px",
+                { lineHeight: "26px", letterSpacing: "0em", fontWeight: "600" },
+              ],
+              "label-sm": [
+                "13px",
+                {
+                  lineHeight: "18px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "display-mobile": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg-mobile": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              eyebrow: [
+                "13px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.08em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-md": [
+                "22px",
+                {
+                  lineHeight: "30px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-md-mobile": [
+                "20px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              display: [
+                "56px",
+                {
+                  lineHeight: "68px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-surface font-body-md text-on-surface antialiased">
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)]"
+    >
+      <div
+        class="h-20 max-w-[1200px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between"
+      >
+        <a
+          class="flex items-center text-on-surface hover:opacity-90 transition-opacity"
+          data-path="beranda"
+          href="#"
+          ><span
+            class="font-headline-md text-headline-md tracking-tight font-semibold"
+            >Nadya Intan R<span class="text-secondary-container">.</span></span
+          ></a
+        >
+        <nav
+          class="hidden lg:flex items-center gap-space-xl"
+          data-active-classes="text-primary font-semibold relative after:content-[''] after:absolute after:bottom-[-6px] after:left-0 after:right-0 after:h-[2px] after:bg-secondary-container after:rounded-full"
+        >
+          <a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="beranda"
+            href="#"
+            >Beranda</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="tentang"
+            href="#"
+            >Tentang</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="proyek"
+            href="#"
+            >Proyek</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="keahlian"
+            href="#"
+            >Keahlian</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="pengalaman"
+            href="#"
+            >Pengalaman</a
+          ><a
+            class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors"
+            data-path="kontak"
+            href="#"
+            >Kontak</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-md">
+          <a
+            class="inline-flex items-center justify-center h-12 px-space-lg rounded-xl bg-secondary-container text-on-primary font-label-md text-label-md hover:bg-secondary transition-all shadow-[0_4px_14px_rgba(227,100,20,0.35)] hover:shadow-none hover:-translate-y-0.5"
+            href="assets/file/CV.pdf"
+            >Unduh CV</a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+      <div class="flex flex-col w-full">
+        <!-- Top Breadcrumb & Status Bar -->
+        <section class="w-full pt-8 pb-4">
+          <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+            <nav
+              aria-label="Breadcrumb"
+              class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant mb-space-md"
+            >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Beranda</a
+              >
+              <span class="text-outline-variant">/</span>
+              <a class="hover:text-primary transition-colors" href="#"
+                >Proyek</a
+              >
+              <span class="text-outline-variant">/</span>
+              <span class="text-primary font-medium">Studi Kasus</span>
+            </nav>
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-tertiary-fixed text-primary font-label-sm text-label-sm font-semibold shadow-sm"
+            >
+              <span
+                class="material-symbols-outlined text-[16px] text-secondary-container"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >verified</span
+              >
+              <span>Jurnal Terakreditasi Sinta 4 • 2026</span>
+            </div>
+          </div>
+        </section>
+        <!-- Hero Section -->
+        <section class="w-full pb-16">
+          <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+            <div class="flex flex-col gap-6 max-w-4xl">
+              <h1
+                class="font-headline-lg text-headline-lg text-primary leading-tight font-bold tracking-tight"
+              >
+                Sistem Pendukung Keputusan Prestasi Siswa SMA Negeri 1 Pronojiwo
+                Menggunakan Metode TOPSIS
+              </h1>
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl"
+              >
+                Digitalisasi komputasi multikriteria untuk seleksi prestasi
+                siswa terpadu. Mengeliminasi subjektivitas dan fragmentasi data
+                bimbingan konseling melalui pemodelan matematis Technique for
+                Order Preference by Similarity to Ideal Solution.
+              </p>
+              <div class="flex flex-wrap items-center gap-4 pt-2">
+                <a
+                  class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-secondary-container text-on-primary font-label-md text-label-md font-medium shadow-[0_4px_14px_rgba(227,100,20,0.35)] hover:bg-secondary hover:-translate-y-0.5 transition-all"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >download</span
+                  >
+                  <span>Unduh Ringkasan PDF</span>
+                </a>
+                <a
+                  class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md font-medium shadow-sm hover:bg-tertiary-fixed transition-all"
+                  href="#"
+                >
+                  <span>Baca Publikasi Jurnal</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    >open_in_new</span
+                  >
+                </a>
+              </div>
+            </div>
+            <!-- Main Showcase Mockup -->
+            <div
+              class="mt-12 rounded-2xl bg-surface-container-lowest shadow-[0_12px_36px_-6px_rgba(15,76,92,0.12)] overflow-hidden"
+            >
+              <!-- Mockup Browser Bar -->
+              <div
+                class="h-11 bg-surface-container px-5 flex items-center justify-between"
+              >
+                <div class="flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-error/70"></span>
+                  <span
+                    class="w-3 h-3 rounded-full bg-secondary-container/70"
+                  ></span>
+                  <span
+                    class="w-3 h-3 rounded-full bg-primary-container/70"
+                  ></span>
+                </div>
+                <div
+                  class="flex items-center gap-2 bg-surface-container-lowest px-4 py-1 rounded-md text-label-sm font-label-sm text-on-surface-variant"
+                >
+                  <span
+                    class="material-symbols-outlined text-[14px] text-outline"
+                    >lock</span
+                  >
+                  <span
+                    >spk-topsis.sman1pronojiwo.sch.id/analisis-prestasi</span
+                  >
+                </div>
+                <div class="flex items-center gap-3 text-outline">
+                  <span class="material-symbols-outlined text-[16px]"
+                    >refresh</span
+                  >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >tune</span
+                  >
+                </div>
+              </div>
+              <!-- Mockup Visual -->
+              <div
+                class="relative w-full aspect-[16/9] md:aspect-[21/9] bg-surface-container-high overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover object-top"
+                  data-alt="Editorial clean dashboard interface of student achievement decision support system displaying TOPSIS preference matrix, top ranked students leaderboard with badge scores, data visualization bar charts in oceanic deep teal and soft warm orange, modern glassmorphic analytics widgets on a warm neutral background."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIx4m4Mzskxkj0Tw1jnI6ZMvAGSaIZ5px_IKNlzrnVdNdRghcDWHjBWvy04M6UASVhk7omuHcUClG4Mf1Lkrr6OMgCAPXIz-cSIoJhG99z8mSl68tiGKsPbIsKVDaiCKaO71uf5ifmi-WlRyFGooJXL-dphiiCFLq6cu8702oQ9qhAprHtp0EkUqvF2L9qOvru65W8Jms-K1u7Lq-ncwPMGtuDbbgVVlBqj8ay8oU"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent pointer-events-none"
+                ></div>
+                <div
+                  class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-on-primary"
+                >
+                  <div
+                    class="flex items-center gap-3 bg-primary-container/90 backdrop-blur-md px-4 py-2 rounded-xl text-surface"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[20px] text-secondary-fixed"
+                      >insights</span
+                    >
+                    <span class="font-label-sm text-label-sm"
+                      >Perhitungan Preferensi Nilai V Aktual • N=142 Siswa</span
+                    >
+                  </div>
+                  <div
+                    class="hidden sm:flex items-center gap-2 bg-surface/90 backdrop-blur-md px-3 py-1.5 rounded-lg text-primary text-label-sm font-semibold"
+                  >
+                    <span
+                      class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"
+                    ></span>
+                    Sistem Aktif
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Project Info Meta Bar -->
+        <section class="w-full py-8 bg-surface-container-low">
+          <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 gap-6 bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)]"
+            >
+              <div class="flex items-start gap-3.5">
+                <div
+                  class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-primary shrink-0"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >badge</span
+                  >
+                </div>
+                <div>
+                  <span
+                    class="block font-label-sm text-label-sm text-on-surface-variant font-medium"
+                    >Peran Proyek</span
+                  >
+                  <span
+                    class="font-headline-sm text-headline-sm text-primary font-semibold"
+                    >Peneliti &amp; Pengembang</span
+                  >
+                </div>
+              </div>
+              <div class="flex items-start gap-3.5">
+                <div
+                  class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-primary shrink-0"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >devices</span
+                  >
+                </div>
+                <div>
+                  <span
+                    class="block font-label-sm text-label-sm text-on-surface-variant font-medium"
+                    >Jenis Solusi</span
+                  >
+                  <span
+                    class="font-headline-sm text-headline-sm text-primary font-semibold"
+                    >Aplikasi Web SPK</span
+                  >
+                </div>
+              </div>
+              <div class="flex items-start gap-3.5">
+                <div
+                  class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-primary shrink-0"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >event_available</span
+                  >
+                </div>
+                <div>
+                  <span
+                    class="block font-label-sm text-label-sm text-on-surface-variant font-medium"
+                    >Tahun Rilis</span
+                  >
+                  <span
+                    class="font-headline-sm text-headline-sm text-primary font-semibold"
+                    >2026</span
+                  >
+                </div>
+              </div>
+              <div class="flex items-start gap-3.5">
+                <div
+                  class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-primary shrink-0"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >code</span
+                  >
+                </div>
+                <div>
+                  <span
+                    class="block font-label-sm text-label-sm text-on-surface-variant font-medium"
+                    >Metodologi &amp; Alat</span
+                  >
+                  <span
+                    class="font-headline-sm text-headline-sm text-primary font-semibold"
+                    >MySQL, TOPSIS, Black Box</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Masalah / Problem Context -->
+        <section class="w-full py-20">
+          <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+            <!-- Section Header -->
+            <div class="mb-10">
+              <span
+                class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest block font-semibold mb-2"
+                >Tantangan &amp; Masalah</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-primary font-semibold tracking-tight"
+              >
+                Latar Belakang Masalah
+              </h2>
+              <div
+                class="w-9 h-[3px] bg-secondary-container rounded-full mt-4"
+              ></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              <div class="lg:col-span-7 flex flex-col gap-6">
+                <p
+                  class="font-body-lg text-body-lg text-on-surface leading-relaxed"
+                >
+                  Penentuan siswa berprestasi di SMA Negeri 1 Pronojiwo masih
+                  bersifat manual dan subjektif karena belum adanya website
+                  layanan Bimbingan dan Konseling (BK) sebagai pusat data
+                  terpadu. Data nilai akademik, kehadiran, kedisiplinan, dan
+                  prestasi non-akademik tersebar dan sulit diolah secara
+                  objektif.
+                </p>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                >
+                  Ketiadaan sistem repositori terpadu memicu potensi bias
+                  manusia dalam perankingan kandidat beasiswa maupun delegasi
+                  lomba antar-sekolah. Proses rekonsiliasi nilai rapor fisik
+                  memakan waktu berhari-hari dengan rentang kesalahan input yang
+                  berulang setiap pergantian semester.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div
+                    class="bg-surface-container p-5 rounded-xl flex items-start gap-3"
+                  >
+                    <span
+                      class="material-symbols-outlined text-secondary-container text-[24px]"
+                      >folder_off</span
+                    >
+                    <div>
+                      <span
+                        class="block font-headline-sm text-headline-sm text-primary font-semibold mb-1"
+                        >Data Tersebar</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Arsip fisik terpisah di ruang TU, wali kelas, dan guru
+                        pembimbing.</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="bg-surface-container p-5 rounded-xl flex items-start gap-3"
+                  >
+                    <span
+                      class="material-symbols-outlined text-secondary-container text-[24px]"
+                      >balance</span
+                    >
+                    <div>
+                      <span
+                        class="block font-headline-sm text-headline-sm text-primary font-semibold mb-1"
+                        >Potensi Bias</span
+                      >
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Bobot penilaian tidak terstandardisasi dengan formula
+                        matematis pasti.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Problem Highlight Accent Card -->
+              <div
+                class="lg:col-span-5 bg-primary text-surface p-8 rounded-2xl shadow-[0_8px_24px_rgba(15,76,92,0.18)] flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="flex items-center gap-2 text-secondary-fixed mb-4"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >warning</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm font-semibold uppercase tracking-wider"
+                      >Akar Permasalahan Inti</span
+                    >
+                  </div>
+                  <blockquote
+                    class="font-headline-sm text-headline-sm text-surface font-normal leading-relaxed italic mb-6"
+                  >
+                    "Ketiadaan repositori terpusat dan standardisasi bobot
+                    multikriteria menghambat objektivitas pihak sekolah dalam
+                    menetapkan representasi siswa berprestasi."
+                  </blockquote>
+                </div>
+                <div
+                  class="pt-6 border-t border-primary-container flex items-center justify-between text-surface-container-high font-label-sm text-label-sm"
+                >
+                  <span>Studi Lapangan: SMA Negeri 1 Pronojiwo</span>
+                  <span class="font-semibold text-secondary-fixed"
+                    >Kabupaten Lumajang</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Solusi / Proposed Architecture -->
+        <section class="w-full py-20 bg-surface-container-low">
+          <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+            <!-- Section Header -->
+            <div class="mb-10">
+              <span
+                class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest block font-semibold mb-2"
+                >Pendekatan Sistem</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-primary font-semibold tracking-tight"
+              >
+                Solusi yang Dirancang
+              </h2>
+              <div
+                class="w-9 h-[3px] bg-secondary-container rounded-full mt-4"
+              ></div>
+            </div>
+            <p
+              class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-12"
+            >
+              Merancang sistem web berbasis metode TOPSIS untuk menilai siswa
+              berprestasi secara objektif dan efisien, dikembangkan berdasarkan
+              empat kriteria penilaian.
+            </p>
+            <!-- 4 Core Criteria Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <!-- Criteria 1 -->
+              <div
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] hover:-translate-y-1 transition-transform"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-tertiary-fixed text-primary flex items-center justify-center mb-5"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >menu_book</span
+                  >
+                </div>
+                <span
+                  class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold mb-2"
+                  >Kriteria 1 (Benefit)</span
+                >
+                <h3
+                  class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                >
+                  Nilai Akademik
+                </h3>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4"
+                >
+                  Rerata akumulatif nilai rapor seluruh mata pelajaran umum dan
+                  peminatan semester berjalan dengan konversi skala baku.
+                </p>
+                <div
+                  class="pt-4 border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm"
+                >
+                  <span class="text-on-surface-variant">Bobot Prioritas</span>
+                  <span class="font-semibold text-secondary">35%</span>
+                </div>
+              </div>
+              <!-- Criteria 2 -->
+              <div
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] hover:-translate-y-1 transition-transform"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-tertiary-fixed text-primary flex items-center justify-center mb-5"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >calendar_today</span
+                  >
+                </div>
+                <span
+                  class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold mb-2"
+                  >Kriteria 2 (Benefit)</span
+                >
+                <h3
+                  class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                >
+                  Kehadiran
+                </h3>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4"
+                >
+                  Persentase kehadiran fisik di kelas, keteraturan presensi
+                  harian, serta minimnya catatan alpa atau izin tanpa
+                  keterangan.
+                </p>
+                <div
+                  class="pt-4 border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm"
+                >
+                  <span class="text-on-surface-variant">Bobot Prioritas</span>
+                  <span class="font-semibold text-secondary">25%</span>
+                </div>
+              </div>
+              <!-- Criteria 3 -->
+              <div
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] hover:-translate-y-1 transition-transform"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-tertiary-fixed text-primary flex items-center justify-center mb-5"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >fact_check</span
+                  >
+                </div>
+                <span
+                  class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold mb-2"
+                  >Kriteria 3 (Benefit)</span
+                >
+                <h3
+                  class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                >
+                  Kedisiplinan
+                </h3>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4"
+                >
+                  Catatan kepatuhan tata tertib madrasah/sekolah, rekam jejak
+                  konseling, dan pembobotan poin pelanggaran siswa.
+                </p>
+                <div
+                  class="pt-4 border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm"
+                >
+                  <span class="text-on-surface-variant">Bobot Prioritas</span>
+                  <span class="font-semibold text-secondary">20%</span>
+                </div>
+              </div>
+              <!-- Criteria 4 -->
+              <div
+                class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] hover:-translate-y-1 transition-transform"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-tertiary-fixed text-primary flex items-center justify-center mb-5"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >military_tech</span
+                  >
+                </div>
+                <span
+                  class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold mb-2"
+                  >Kriteria 4 (Benefit)</span
+                >
+                <h3
+                  class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                >
+                  Prestasi Non-Akademik
+                </h3>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4"
+                >
+                  Tingkat kejuaraan lomba olahraga, seni, kepramukaan, dan
+                  keilmuan mulai tingkat kabupaten hingga internasional.
+                </p>
+                <div
+                  class="pt-4 border-t border-surface-container flex items-center justify-between text-label-sm font-label-sm"
+                >
+                  <span class="text-on-surface-variant">Bobot Prioritas</span>
+                  <span class="font-semibold text-secondary">20%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Metodologi & Alur Proses -->
+        <section class="w-full py-20">
+          <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+            <!-- Section Header -->
+            <div class="mb-12">
+              <span
+                class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest block font-semibold mb-2"
+                >Alur Kerja</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-primary font-semibold tracking-tight"
+              >
+                Tahapan Pengembangan &amp; Pengujian
+              </h2>
+              <div
+                class="w-9 h-[3px] bg-secondary-container rounded-full mt-4"
+              ></div>
+            </div>
+            <!-- 5-Step Process Stepper -->
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+              <!-- Step 1 -->
+              <div
+                class="relative bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="w-8 h-8 rounded-full bg-primary text-surface font-label-md text-label-md font-bold flex items-center justify-center mb-4"
+                  >
+                    01
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                  >
+                    Analisis Kebutuhan
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Observasi berkas BK, wawancara pemangku kepentingan guru,
+                    serta formulasi bobot preferensi alternatif.
+                  </p>
+                </div>
+                <span
+                  class="mt-6 text-label-sm font-label-sm text-secondary font-medium"
+                  >Observasi Lapangan</span
+                >
+              </div>
+              <!-- Step 2 -->
+              <div
+                class="relative bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="w-8 h-8 rounded-full bg-primary text-surface font-label-md text-label-md font-bold flex items-center justify-center mb-4"
+                  >
+                    02
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                  >
+                    Perancangan Sistem
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Pemodelan DFD, relasi basis data MySQL, perancangan
+                    antarmuka, dan struktur matriks keputusan TOPSIS.
+                  </p>
+                </div>
+                <span
+                  class="mt-6 text-label-sm font-label-sm text-secondary font-medium"
+                  >UML &amp; Basis Data</span
+                >
+              </div>
+              <!-- Step 3 -->
+              <div
+                class="relative bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="w-8 h-8 rounded-full bg-primary text-surface font-label-md text-label-md font-bold flex items-center justify-center mb-4"
+                  >
+                    03
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                  >
+                    Implementasi
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Pengkodean antarmuka web, normalisasi matriks ternormalisasi
+                    terbobot, serta komputasi solusi ideal positif/negatif.
+                  </p>
+                </div>
+                <span
+                  class="mt-6 text-label-sm font-label-sm text-secondary font-medium"
+                  >Algoritma TOPSIS</span
+                >
+              </div>
+              <!-- Step 4 -->
+              <div
+                class="relative bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="w-8 h-8 rounded-full bg-primary text-surface font-label-md text-label-md font-bold flex items-center justify-center mb-4"
+                  >
+                    04
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                  >
+                    Pengujian Black Box
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Verifikasi menyeluruh terhadap masukan fungsional, navigasi
+                    antarmuka, keamanan akses peran, dan validasi form.
+                  </p>
+                </div>
+                <span
+                  class="mt-6 text-label-sm font-label-sm text-secondary font-medium"
+                  >100% Fungsi Valid</span
+                >
+              </div>
+              <!-- Step 5 -->
+              <div
+                class="relative bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="w-8 h-8 rounded-full bg-secondary-container text-on-primary font-label-md text-label-md font-bold flex items-center justify-center mb-4"
+                  >
+                    05
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                  >
+                    Validasi Hasil
+                  </h3>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Uji komparasi antara perangkingan manual terdahulu dengan
+                    luaran sistem SPK untuk mengukur konsistensi nilai.
+                  </p>
+                </div>
+                <span
+                  class="mt-6 text-label-sm font-label-sm text-secondary font-medium"
+                  >Kesesuaian 100%</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Screenshot Gallery Section -->
+        <section class="w-full py-20 bg-surface-container-low">
+          <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+            <!-- Section Header -->
+            <div class="mb-12">
+              <span
+                class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest block font-semibold mb-2"
+                >Dokumentasi Antarmuka</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-primary font-semibold tracking-tight"
+              >
+                Tangkapan Layar Sistem
+              </h2>
+              <div
+                class="w-9 h-[3px] bg-secondary-container rounded-full mt-4"
+              ></div>
+            </div>
+            <!-- 4 Mockup Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Screenshot 1 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-4 shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] hover:shadow-[0_12px_28px_-4px_rgba(15,76,92,0.12)] transition-all"
+              >
+                <div
+                  class="relative aspect-[16/10] bg-surface-container rounded-xl overflow-hidden mb-4"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    data-alt="Modern web interface dashboard showing student analytics data table, criteria charts, and key performance indicators in a muted teal palette with coral accent buttons for decision support."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_fkHh7AzheuQ_36e3Iu9RQVRJVIZtgY6Z_Va6sPh-Z1Y9eka5HEnjOTgYsstxooXTyTqJNsoMRxeLgYCh5t3kNemriNWbT3zXbZGtdOf-_nLL13HtW_ekPMaXb4tpoXhDJNNgQwzabxwTmSrn_mHYc7NGQ6ahRf6PKamxk5siyiU-lQm2N5Ne8iKQdf3wvI1VkILKRW3-dIpJYGH_hp3M_WqIus-5FczzJuRRJ1M"
+                  />
+                </div>
+                <div class="p-2">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span
+                      class="w-2 h-2 rounded-full bg-secondary-container"
+                    ></span>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold"
+                      >Modul Beranda Analitik</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary font-semibold mb-1"
+                  >
+                    Dashboard Analitik &amp; Ringkasan Siswa
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Tampilan matriks awal dan ringkasan distribusi nilai dari
+                    142 kandidat siswa per tingkat kelas.
+                  </p>
+                </div>
+              </div>
+              <!-- Screenshot 2 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-4 shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] hover:shadow-[0_12px_28px_-4px_rgba(15,76,92,0.12)] transition-all"
+              >
+                <div
+                  class="relative aspect-[16/10] bg-surface-container rounded-xl overflow-hidden mb-4"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    data-alt="Data management form interface with clean typography, tabular student inputs, academic score converters, and non-academic certificate uploads in an administrative education application."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2hID-pf_zqjazZFJNN_ELs8uAYdARP18GbROGmwhKcaqU-6-oBu0accdpQ4Gpbi6N7qWWDTbi8acS1yyq3Nn52-7YW49rvRGrqP0f6z65y8Qi0MDTlj16IK-mY_5xCE_rtjj6p6sW1o6lVGyeyf05xmKVokA8vitGUrqBUkxSXuQVsShh7JBs_GVytLPNWgZErMdBfXRVTuBp2hL3AEjedYF6ELSccE5b5R9FcuE"
+                  />
+                </div>
+                <div class="p-2">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span
+                      class="w-2 h-2 rounded-full bg-secondary-container"
+                    ></span>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold"
+                      >Modul Data Master</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary font-semibold mb-1"
+                  >
+                    Formulir Input &amp; Integrasi Data BK
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Pengelolaan data 4 kriteria terpadu dengan validasi masukan
+                    otomatis dan riwayat presensi.
+                  </p>
+                </div>
+              </div>
+              <!-- Screenshot 3 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-4 shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] hover:shadow-[0_12px_28px_-4px_rgba(15,76,92,0.12)] transition-all"
+              >
+                <div
+                  class="relative aspect-[16/10] bg-surface-container rounded-xl overflow-hidden mb-4"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    data-alt="Detailed computational matrix screen showing normalization steps of TOPSIS algorithm, ideal solution vectors, and intermediate mathematical formulas with precision decimals."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZHkRILREnpr8omZnkesrRnd8r7DfCsPlkYFOj2OycwNVFURrgZ5Bxa84koSIMEl7p9392cYUUvjYspxWwo2h-rbcAoX8qx-VqVuYYe5gpsfpDcyu1HNd4jUjihhT9XcfRFQ354ooe4M1WhG_UFgDUJNsEhpN8p3YqW33f29p33p_ktTDfJgfZttxprUVzX5CWZptCMD9ymui3tg3jyjWGv7wqnB-lLkOImaoIc4U"
+                  />
+                </div>
+                <div class="p-2">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span
+                      class="w-2 h-2 rounded-full bg-secondary-container"
+                    ></span>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold"
+                      >Mesin Inferensi SPK</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary font-semibold mb-1"
+                  >
+                    Matriks Normalisasi &amp; Perhitungan TOPSIS
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Transparansi alur komputasi: matriks ternormalisasi,
+                    pembobotan kriteria, hingga jarak Euclidean ideal.
+                  </p>
+                </div>
+              </div>
+              <!-- Screenshot 4 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-4 shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] hover:shadow-[0_12px_28px_-4px_rgba(15,76,92,0.12)] transition-all"
+              >
+                <div
+                  class="relative aspect-[16/10] bg-surface-container rounded-xl overflow-hidden mb-4"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    data-alt="Final ranking report screen with top student awardees, sortable preference score column, badge medals, and export buttons for PDF and Excel reports."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcIuxhvx_3Lo33K9PvYPWflyotovBHoqilf94E8M7eHfF7ZlJOkt1F0QtZKPZPYKyRvD_rtIgF-CGibA8IIZIxLbVOUNgOeqHD2QPFW0N2YCUYU0XBpVe4aggxVo6-ZjkgIYTmR5nyZPZqVPTb7nfJkAmpxhrqmUjkSStiKQ1EJQRCS5fWbwpV8OUWaPDsD2IEj-o6Eddcb_p9ciFSl2FhNSQ1L_3Whta5MLkOaOI"
+                  />
+                </div>
+                <div class="p-2">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span
+                      class="w-2 h-2 rounded-full bg-secondary-container"
+                    ></span>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary font-semibold"
+                      >Luaran Keputusan</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary font-semibold mb-1"
+                  >
+                    Laporan Hasil Perangkingan Akhir
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Tabel urutan ranking final dilengkapi nilai preferensi V,
+                    status lolos beasiswa, dan tombol ekspor resmi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Hasil & Dampak (Impact Metrics) -->
+        <section class="w-full py-20">
+          <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+            <!-- Section Header -->
+            <div class="mb-12">
+              <span
+                class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest block font-semibold mb-2"
+                >Evaluasi</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-primary font-semibold tracking-tight"
+              >
+                Hasil &amp; Dampak Implementasi
+              </h2>
+              <div
+                class="w-9 h-[3px] bg-secondary-container rounded-full mt-4"
+              ></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+              <!-- Highlights List Card -->
+              <div
+                class="lg:col-span-7 bg-surface-container-lowest p-8 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] flex flex-col justify-between"
+              >
+                <div>
+                  <h3
+                    class="font-headline-md text-headline-md text-primary font-semibold mb-6"
+                  >
+                    Nilai Tambah Operasional Sekolah
+                  </h3>
+                  <div class="flex flex-col gap-5">
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="w-8 h-8 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center shrink-0 mt-0.5"
+                      >
+                        <span
+                          class="material-symbols-outlined text-[20px] font-bold"
+                          >check</span
+                        >
+                      </div>
+                      <div>
+                        <h4
+                          class="font-headline-sm text-headline-sm text-primary font-semibold mb-1"
+                        >
+                          Akurasi &amp; Konsistensi Tinggi
+                        </h4>
+                        <p
+                          class="font-body-md text-body-md text-on-surface-variant"
+                        >
+                          Perangkingan dihitung otomatis, akurat, dan konsisten
+                          dengan validasi manual sekolah tanpa deviasi data.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="w-8 h-8 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center shrink-0 mt-0.5"
+                      >
+                        <span
+                          class="material-symbols-outlined text-[20px] font-bold"
+                          >check</span
+                        >
+                      </div>
+                      <div>
+                        <h4
+                          class="font-headline-sm text-headline-sm text-primary font-semibold mb-1"
+                        >
+                          Peningkatan Efisiensi Penilaian
+                        </h4>
+                        <p
+                          class="font-body-md text-body-md text-on-surface-variant"
+                        >
+                          Menghemat waktu konsolidasi data dari berhari-hari
+                          menjadi hitungan menit dengan komputasi instan.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                      <div
+                        class="w-8 h-8 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center shrink-0 mt-0.5"
+                      >
+                        <span
+                          class="material-symbols-outlined text-[20px] font-bold"
+                          >check</span
+                        >
+                      </div>
+                      <div>
+                        <h4
+                          class="font-headline-sm text-headline-sm text-primary font-semibold mb-1"
+                        >
+                          Transparansi &amp; Keadilan Terjamin
+                        </h4>
+                        <p
+                          class="font-body-md text-body-md text-on-surface-variant"
+                        >
+                          Meningkatkan transparansi dan keadilan penilaian
+                          berkat matriks perhitungan terbuka yang dapat diaudit
+                          bersama.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="mt-8 pt-6 border-t border-surface-container flex items-center gap-2 text-on-surface-variant text-label-sm font-label-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-[18px] text-secondary"
+                    >verified_user</span
+                  >
+                  <span
+                    >Telah diujicobakan pada 142 data riil siswa SMA Negeri 1
+                    Pronojiwo</span
+                  >
+                </div>
+              </div>
+              <!-- Quantitative Metric Mosaic -->
+              <div
+                class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4"
+              >
+                <div
+                  class="bg-primary text-surface p-6 rounded-2xl flex items-center justify-between"
+                >
+                  <div>
+                    <span
+                      class="font-display text-display font-bold text-secondary-fixed block leading-none"
+                      >100%</span
+                    >
+                    <span
+                      class="font-label-md text-label-md text-surface-container-high mt-1 block"
+                      >Validasi Kesesuaian Sistem</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-tertiary-fixed-dim"
+                      >Identik dengan komputasi manual rujukan</span
+                    >
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[48px] text-primary-container"
+                    >rule</span
+                  >
+                </div>
+                <div
+                  class="bg-surface-container p-6 rounded-2xl flex items-center justify-between"
+                >
+                  <div>
+                    <span
+                      class="font-display text-display font-bold text-primary block leading-none"
+                      >&gt;85%</span
+                    >
+                    <span
+                      class="font-label-md text-label-md text-on-surface-variant mt-1 block"
+                      >Reduksi Waktu Rekonsiliasi</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Proses seleksi selesai dalam hitungan detik</span
+                    >
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[48px] text-outline-variant"
+                    >speed</span
+                  >
+                </div>
+                <div
+                  class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] flex items-center justify-between sm:col-span-2 lg:col-span-1"
+                >
+                  <div>
+                    <div class="flex items-center gap-2 mb-1">
+                      <span
+                        class="font-eyebrow text-eyebrow text-secondary uppercase font-semibold"
+                        >Publikasi Ilmiah</span
+                      >
+                    </div>
+                    <span
+                      class="font-headline-md text-headline-md text-primary font-bold block"
+                      >Terindeks Sinta 4</span
+                    >
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Tercatat dalam jurnal ilmiah nasional terakreditasi</span
+                    >
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[44px] text-secondary-container"
+                    >auto_stories</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Project Navigation Bar -->
+        <section class="w-full py-12 bg-surface-container-low">
+          <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+            <div
+              class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,76,92,0.06)] flex flex-col sm:flex-row items-center justify-between gap-4"
+            >
+              <a
+                class="inline-flex items-center gap-2 text-primary font-label-md text-label-md font-semibold hover:text-secondary transition-colors w-full sm:w-auto justify-start"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-[20px]"
+                  >arrow_back</span
+                >
+                <span>Proyek Sebelumnya</span>
+              </a>
+              <a
+                class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-secondary-container text-on-primary font-label-md text-label-md font-medium shadow-[0_4px_14px_rgba(227,100,20,0.35)] hover:bg-secondary hover:-translate-y-0.5 transition-all w-full sm:w-auto"
+                href="#"
+              >
+                <span>Baca Jurnal Ilmiah</span>
+                <span class="material-symbols-outlined text-[18px]"
+                  >open_in_new</span
+                >
+              </a>
+              <a
+                class="inline-flex items-center gap-2 text-primary font-label-md text-label-md font-semibold hover:text-secondary transition-colors w-full sm:w-auto justify-end"
+                href="#"
+              >
+                <span>Proyek Berikutnya</span>
+                <span class="material-symbols-outlined text-[20px]"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-primary-container text-surface py-space-xl shadow-[0_-4px_24px_rgba(15,76,92,0.12)]"
+    >
+      <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter py-space-lg">
+          <div class="md:col-span-5 flex flex-col gap-space-sm">
+            <span
+              class="font-headline-md text-headline-md text-surface font-semibold tracking-tight"
+              >Nadya Intan Rayyano</span
+            >
+            <p
+              class="font-body-md text-body-md text-surface-container-high max-w-sm"
+            >
+              Teliti, rapi, dan siap berkontribusi dalam rekayasa sistem,
+              manajemen data terpadu, dan desain interaksi digital.
+            </p>
+          </div>
+          <div class="md:col-span-3 flex flex-col gap-space-sm">
+            <span
+              class="font-label-md text-label-md font-semibold text-secondary-fixed uppercase tracking-wider"
+              >Navigasi Cepat</span
+            >
+            <div class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+              <a
+                class="text-surface-container-high hover:text-secondary-fixed transition-colors"
+                data-path="beranda"
+                href="#"
+                >Beranda</a
+              ><a
+                class="text-surface-container-high hover:text-secondary-fixed transition-colors"
+                data-path="tentang"
+                href="#"
+                >Tentang</a
+              ><a
+                class="text-surface-container-high hover:text-secondary-fixed transition-colors"
+                data-path="proyek"
+                href="#"
+                >Proyek</a
+              ><a
+                class="text-surface-container-high hover:text-secondary-fixed transition-colors"
+                data-path="keahlian"
+                href="#"
+                >Keahlian</a
+              ><a
+                class="text-surface-container-high hover:text-secondary-fixed transition-colors"
+                data-path="pengalaman"
+                href="#"
+                >Pengalaman</a
+              ><a
+                class="text-surface-container-high hover:text-secondary-fixed transition-colors"
+                data-path="kontak"
+                href="#"
+                >Kontak</a
+              >
+            </div>
+          </div>
+          <div class="md:col-span-4 flex flex-col gap-space-sm">
+            <span
+              class="font-label-md text-label-md font-semibold text-secondary-fixed uppercase tracking-wider"
+              >Kontak &amp; Jejaring</span
+            >
+            <div
+              class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-container-high"
+            >
+              <a
+                class="flex items-center gap-space-xs hover:text-secondary-fixed transition-colors"
+                href="mailto:rayyanointan10@gmail.com"
+                ><span class="material-symbols-outlined text-[18px]">mail</span
+                >rayyanointan10@gmail.com</a
+              ><a
+                class="flex items-center gap-space-xs hover:text-secondary-fixed transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined text-[18px]">link</span
+                >LinkedIn Profile</a
+              ><a
+                class="flex items-center gap-space-xs hover:text-secondary-fixed transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined text-[18px]"
+                  >description</span
+                >Unduh Berkas CV</a
+              >
+              <div
+                class="flex items-center gap-space-xs pt-space-xs text-tertiary-fixed-dim"
+              >
+                <span class="material-symbols-outlined text-[18px]"
+                  >location_on</span
+                >Indonesia
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-space-lg pt-space-md border-t border-tertiary-container flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-surface-container-high"
+        >
+          <p>© 2026 Nadya Intan Rayyano. All rights reserved.</p>
+          <p class="text-tertiary-fixed-dim">
+            Informatics Engineering Portfolio
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
